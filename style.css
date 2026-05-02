@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  color: white;
+}
+
+.app {
+  display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 240px;
+  height: 100vh;
+  padding: 20px;
+  background: #0b1220;
+}
+
+.sidebar h2 {
+  color: #38bdf8;
+}
+
+.sidebar li {
+  list-style: none;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.sidebar li:hover {
+  background: #1e293b;
+}
+
+/* MAIN */
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+/* SECTIONS */
+.section {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+/* CARDS */
+.card, .progress-card, .timer-card {
+  background: #1e293b;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 12px;
+}
+
+/* INPUTS */
+input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: none;
+  background: #334155;
+  color: white;
+}
+
+/* BUTTONS */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(90deg, #38bdf8, #6366f1);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* PROGRESS BAR */
+.progress-bar {
+  height: 8px;
+  background: #334155;
+  border-radius: 10px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #22c55e;
+}
+
+/* TIMER */
+#timerDisplay {
+  font-size: 40px;
+  color: #38bdf8;
+}
