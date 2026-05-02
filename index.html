@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smart Study Planner Pro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <h2> Study Planner</h2>
+    <ul>
+      <li onclick="showSection('dashboard')"> Dashboard</li>
+      <li onclick="showSection('today')"> Today</li>
+      <li onclick="showSection('subjects')"> Subjects</li>
+    </ul>
+  </div>
+
+  <!-- MAIN -->
+  <div class="main">
+
+    <!-- DASHBOARD -->
+    <div id="dashboard" class="section active">
+      <h1>Progress Dashboard</h1>
+
+      <h2> Your Stats</h2>
+      <div id="statsBox"></div>
+
+      <h2> Timer</h2>
+      <div class="timer-card">
+        <h1 id="timerDisplay">25:00</h1>
+        <button onclick="startTimer()">Start</button>
+        <button onclick="pauseTimer()">Pause</button>
+        <button onclick="resetTimer()">Reset</button>
+      </div>
+
+      <div id="progressContainer"></div>
+    </div>
+
+    <!-- TODAY -->
+    <div id="today" class="section">
+      <h1> Smart Daily Plan</h1>
+      <button onclick="toggleExamMode()" id="examBtn">Exam Mode OFF</button>
+      <div id="todayPlan"></div>
+    </div>
+
+    <!-- SUBJECTS -->
+    <div id="subjects" class="section">
+      <h1>Add Subject</h1>
+
+      <div class="card">
+        <input type="text" id="subject" placeholder="DBMS, Math, OS">
+        <input type="date" id="examDate">
+        <button onclick="addSubject()">Add Subject</button>
+      </div>
+
+      <h2>Your Subjects</h2>
+      <div id="subjectList"></div>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
